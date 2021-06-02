@@ -1,0 +1,24 @@
+{
+  "name": "fbDbBulkUpload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuyani-innovativethinking/fbDbBulkUpload.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vuyani-innovativethinking/fbDbBulkUpload/issues"
+  },
+  "homepage": "https://github.com/vuyani-innovativethinking/fbDbBulkUpload#readme",
+  "dependencies": {
+    "firebase": "^8.6.3",
+    "firebase-admin": "^9.9.0"
+  }
+}
