@@ -1,6 +1,6 @@
-var admin = require("firebase-admin");
+const admin = require("firebase-admin");
  
-var serviceAccount = require("./service_key.json");
+const serviceAccount = require("./service_key.json");
  
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -17,11 +17,11 @@ fs.readdir(directoryPath, function(err, files) {
   }
  
   files.forEach(function(file) {
-    var lastDotIndex = file.lastIndexOf(".");
+    const lastDotIndex = file.lastIndexOf(".");
  
-    var menu = require("./files/" + file);
+    const menu = require("./files/" + file);
  
-    var count = 0;
+    const count = 0;
     menu.forEach(function(obj) {
       firestore
         .collection(file.substring(0, lastDotIndex))
